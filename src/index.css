@@ -4,89 +4,89 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Light Mode Palette - Quiet Luxury */
+    --background: 0 0% 100%; /* Crisp White */
+    --foreground: 220 30% 15%; /* Rich Navy/Deep Charcoal */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 97%; /* Slightly Off-White */
+    --card-foreground: 220 30% 15%; /* Rich Navy/Deep Charcoal */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 97%; /* Slightly Off-White */
+    --popover-foreground: 220 30% 15%; /* Rich Navy/Deep Charcoal */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 220 30% 20%; /* Rich Navy/Deep Charcoal for elements */
+    --primary-foreground: 0 0% 98%; /* Crisp White/Light Grey text on primary */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 15% 90%; /* Lighter Grey */
+    --secondary-foreground: 220 30% 20%; /* Rich Navy/Deep Charcoal */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 15% 65%; /* Light Grey for less important text */
+    --muted-foreground: 220 20% 40%; /* Darker Grey/Navy */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 40 70% 55%; /* Brushed Gold */
+    --accent-foreground: 220 30% 10%; /* Rich Navy/Deep Charcoal text on accent */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%; /* Standard Red */
+    --destructive-foreground: 0 0% 98%; /* Crisp White/Light Grey */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 85%; /* Light Grey */
+    --input: 220 15% 85%; /* Light Grey */
+    --ring: 40 70% 55%; /* Brushed Gold for focus */
 
-    --radius: 0.5rem;
+    --radius: 0.375rem; /* 6px subtle rounding */
 
-    --sidebar-background: 0 0% 98%;
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar - Light Mode (aligned with main theme) */
+    --sidebar-background: 0 0% 100%; /* var(--background) */
+    --sidebar-foreground: 220 30% 15%; /* var(--foreground) */
+    --sidebar-primary: 220 30% 20%; /* var(--primary) */
+    --sidebar-primary-foreground: 0 0% 98%; /* var(--primary-foreground) */
+    --sidebar-accent: 40 70% 55%; /* var(--accent) */
+    --sidebar-accent-foreground: 220 30% 10%; /* var(--accent-foreground) */
+    --sidebar-border: 220 15% 85%; /* var(--border) */
+    --sidebar-ring: 40 70% 55%; /* var(--ring) */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark Mode Palette - Quiet Luxury (Primary Theme Focus) */
+    --background: 220 30% 10%; /* Deep Charcoal/Rich Navy */
+    --foreground: 0 0% 98%; /* Crisp White/Light Grey */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 30% 15%; /* Slightly Lighter Navy/Charcoal */
+    --card-foreground: 0 0% 98%; /* Crisp White/Light Grey */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 30% 15%; /* Slightly Lighter Navy/Charcoal */
+    --popover-foreground: 0 0% 98%; /* Crisp White/Light Grey */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 220 30% 20%; /* Rich Navy/Deep Charcoal for elements */
+    --primary-foreground: 0 0% 98%; /* Crisp White/Light Grey text on primary */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 25% 30%; /* Lighter Navy/Charcoal */
+    --secondary-foreground: 0 0% 98%; /* Crisp White/Light Grey */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 20% 45%; /* Subtle Grey/Navy for less important text */
+    --muted-foreground: 0 0% 80%; /* Light Grey/White */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 40 70% 55%; /* Brushed Gold */
+    --accent-foreground: 220 30% 10%; /* Rich Navy/Deep Charcoal text on accent */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 60% 45%; /* Themed Dark Red */
+    --destructive-foreground: 0 0% 98%; /* Crisp White/Light Grey */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 30% 25%; /* Subtle, slightly lighter shade of background */
+    --input: 220 30% 25%; /* Subtle, slightly lighter shade of background */
+    --ring: 40 70% 55%; /* Brushed Gold for focus */
+
+    /* Sidebar - Dark Mode (aligned with main theme) */
+    --sidebar-background: 220 30% 10%; /* var(--background) */
+    --sidebar-foreground: 0 0% 98%; /* var(--foreground) */
+    --sidebar-primary: 220 30% 20%; /* var(--primary) */
+    --sidebar-primary-foreground: 0 0% 98%; /* var(--primary-foreground) */
+    --sidebar-accent: 40 70% 55%; /* var(--accent) */
+    --sidebar-accent-foreground: 220 30% 10%; /* var(--accent-foreground) */
+    --sidebar-border: 220 30% 25%; /* var(--border) */
+    --sidebar-ring: 40 70% 55%; /* var(--ring) */
   }
 }
 
@@ -97,5 +97,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
   }
 }
